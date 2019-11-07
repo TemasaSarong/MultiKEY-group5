@@ -18,6 +18,17 @@ p {
 	
 }
 
+p2 {
+	color: #f3f3f3;
+	font-size: 25px;
+	position: center;
+	font-weight: bold;
+	padding: 12px 100px;
+	text-decoration: none;
+	position: absolute;
+	
+}
+
 header{
   display: flex;
   flex-direction: colum;
