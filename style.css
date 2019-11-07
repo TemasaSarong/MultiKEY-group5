@@ -29,6 +29,12 @@ p2 {
 	
 }
 
+img{
+	padding: 12px 100px;
+	position: center;
+	justify-item: center;
+}
+
 header{
   display: flex;
   flex-direction: colum;
