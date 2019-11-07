@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>menu1</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+<style>
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.mobile-container {
+  max-width: 500px;
+  margin: auto;
+  background-color: #F3F3F3;
+  height: 100%;
+  color: #707070;
+  border-radius: 0px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 16px;
+	text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #67CFAC;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.active {
+  background-color: #67CFAC;
+  color: white;
+}
+	
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+ 
+  <div id="myLinks">
+    <a href="#mykeys">My Keys</a>
+    	<div class="submenu">
+			<a href="#remove">Remove & Lock Keys</a>
+			<a href="#share">Share Keys</a>
+			<a href="#how">How MultiKey Works</a>
+	  	</div>
+	  
+    <a href="#contact">Contact Us</a>
+	 <div class="submenu">
+			<a href="#help">Help</a>
+			<a href="#share">About NHS</a>
+			<a href="#how">How MultiKey Works</a>
+	  	</div>
+    <a href="#account">My Account</a>
+    <a href="#settings">Settings</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+   	</a>
+	<a href="#home" class="active">Nille Frandsen</a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Vertical Mobile Navbar</h3>
+  <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+  <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
