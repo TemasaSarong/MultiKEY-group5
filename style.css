@@ -16,13 +16,14 @@ p {
 header{
   display: flex;
   flex-direction: colum;
+  font-size: 90px;
   width: 100%;
-  background-color: blue;
   min-hieght: 500px;
   color: #fff;
   justify-content: center; 
   align-item: center;
 }
+
 
 .wrapper {
     text-align: center;
