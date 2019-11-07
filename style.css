@@ -7,15 +7,20 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+html {
+	height: 100%;
+}
+
 p {
 	color: #f3f3f3;
-	font-size: 25px;
+	font-size: 14px;
 	position: center;
 	font-weight: bold;
-	padding: px 8px;
+	padding: 25px 8px;
 	text-decoration: none;
-	position: center;
-	
+	justify-content: center;
+	margin: 0px 96px;
+	text-align: left;
 }
 
 img{
@@ -27,12 +32,13 @@ img{
 header{
   display: flex;
   flex-direction: colum;
-  font-size: 50px;
+  font-size: 40px;
   width: 100%;
   min-hieght: 500px;
   color: #fff;
   justify-content: center; 
   align-item: center;
+  margin-bottom: 80px;
 }
 
 
@@ -50,7 +56,7 @@ header{
 	cursor: pointer;
 	color: #707070;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: bold;
 	padding: 12px 24px;
 	text-decoration: none;
