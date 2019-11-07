@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	background: #67CFAC;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+img{
+	padding: 60px 40px;
+	position: center;
+	justify-item: center;
+}
+
+header{
+  display: flex;
+  flex-direction: colum;
+  font-size: 40px;
+  width: 100%;
+  min-hieght: 500px;
+  color: #fff;
+  justify-content: center; 
+  align-item: center;
+  margin-bottom: 80px;
+}
