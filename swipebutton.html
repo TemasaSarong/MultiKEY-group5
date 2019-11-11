@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>swipebutton</title>
+	<link href="swipeinhold.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+</head>
+	
+<body>	
+	
+	<!--Kan man få boksen til at skifte over i den anden side når den er blevet aktiveret?-->
+
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#67CFAC;width:45px;height:20px;padding:40px;">
+Swipe</div>
+	
+<div class="wrapper">
+
+<div class="swipe">
+<script>
+	
+function mDown(obj) {
+  obj.style.backgroundColor = "#F3F3F3";
+  obj.innerHTML = "Activated";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#67CFAC";
+  obj.innerHTML="Swipe";
+}
+	
+</script>
+	
+</div>
+</div>
+
+		
+</body>
+</html>
