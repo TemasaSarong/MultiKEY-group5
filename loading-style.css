@@ -1,13 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {
-	background-color: #67CFAC;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-}
 
 .container {
 	display: flex;
@@ -24,7 +17,7 @@ body {
 	width: 30px;
 	border-radius: 5px;
 	background-color: #67CFAC;
-	left: -15px;
+	left: 100;
 	transform: rotate(0deg);
 	transform-origin: 65px;
 	transition:background 1s, box-shadow 1s;
