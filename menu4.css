@@ -18,7 +18,7 @@ nav { /* Selve menu linjen */
 		}
 
 .dots { 
-		position: relative;
+		position:relative;
   		top: 15px;
   		left: 80px;
 		
@@ -28,8 +28,8 @@ nav { /* Selve menu linjen */
 		color: #ffffff;
 		font-size: 30px;
 		z-index: 1; 
-		float: right;
-}
+		
+		}
 
 h2 {
 		text-align: center;
