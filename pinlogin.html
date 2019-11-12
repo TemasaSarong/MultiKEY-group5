@@ -19,7 +19,7 @@
 			
 		<header>
 			
-			<div class="img"><img src="billeder/Multikey Logo white.png" width="80%" alt="LogoBillede"/>
+			<div class="img"><img src="billeder/Multikey Logo white.png" width="60%" alt="LogoBillede"/>
 			</div>
 		
 		</header>
@@ -29,14 +29,21 @@
 		
 					<p>LOGIN TO YOUR ACCOUNT</p>
 					
-					<p2>Type in your chosen pincode - or use the <a href="#" style="color:#67CFAC">fingerprint Scanner</a></p2>
+					<p2>Type in your chosen pincode - or use the <a href="#" style="color:#67CFAC">fingerprint scanner</a></p2>
 
 				</div>
 		
 	
+		
+		
 		<div class="pin">
+						
+			<div class="pinbox">
+				
+				<input inputmode="numeric" input type="password" maxlength="4" name="pin" oninput="this.className = ''" />
+				
+			</div>
 			
-			<input inputmode="numeric" type="password" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
 			
 	    </div>
 		

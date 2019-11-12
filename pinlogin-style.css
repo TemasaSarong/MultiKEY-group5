@@ -19,15 +19,15 @@ html {
 }
 
 header{
-  display: flex;
-  flex-direction: colum;
-  width: 100%;
-  background: #67CFAC;
-  justify-content: center; 
-  align-item: center;
-  top: 0px;
+  	display: flex;
+  	flex-direction: colum;
+  	width: 100%;
+  	background: #67CFAC;
+  	justify-content: center; 
+  	align-item: center;
+  	top: 0px;
 	left: 0px;
-  margin-bottom: 40px;
+  	margin-bottom: 40px;
 }
 
 img{
@@ -38,61 +38,60 @@ img{
 
 .wrapper2 {
 	justify-content: center;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+	text-align: left;
 }
 
 p {
-	color: #F3F3F3;
-	font-size: 18px;
+	color: #67CFAC;
+	font-size: 25px;
 	position: center;
 	font-weight: bold;
-	text-decoration: none;
-	margin: 20px 0px;
+	margin-top: 25%;
 }
  
 
 p2{
-    color: #F3F3F3;
-	font-size: 14px;
-	position: center;
-	padding: 25px 8px;
+    color: #707070;
+	font-size: 18px;
 	text-decoration: none;
-	justify-content: center;
-	margin: 0px 96px;
-	text-align: left;
+	margin-top: 5%;
 }
 
 
 p3{
-  font-size: 16px;
-  width: 100%;
-  min-hieght: 500px;
-  color: #707070;
-  text-align: right;
-  margin-left: 260px;
-  margin-top: 0px;
-  margin-bottom: 40px;
-  text-decoration: none;
+  	font-size: 16px;
+  	width: 100%;
+  	min-hieght: 500px;
+  	color: #707070;
+  	text-align: right;
+  	margin-left: 260px;
+  	margin-top: 0px;
+  	margin-bottom: 40px;
+  	text-decoration: none;
 }
 
-
-p5{
-  font-size: 25px;
-  width: 100%;
-  min-hieght: 500px;
-  color: #707070;
-  text-align: right;
-  margin-left: 55px;
-  text-decoration: none;
-}
 
 a{
-  text-decoration: none;
+  	text-decoration: none;
 }
 
 .pin{
-  justify-content: center; 
-  align-item: center;
-  margin-top: 0px;
-  margin-bottom: 40px;
-  margin-left: 90px;
+	display: inline-flex;
+ 	justify-content: center; 
+  	align-item: center;
+	
+  	margin-top: 0px;
+  	margin-bottom: 40px;
 }
+
+.pinBox {
+	width: 5px;
+}
+
+
+
+
+
