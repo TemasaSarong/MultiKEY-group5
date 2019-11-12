@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Prompt</title>
+</head>
+
+<body>
+	<script>document.getElementById('alert').addEventListener('click', function(){
+	popup.alert(
+		{
+			content : "We're sending you a SMS with a code to verify your account - and to make sure that only you can access your keys."
+		}
+	);
+});
+
+document.getElementById('prompt').addEventListener('click', function(){
+	popup.prompt(
+		{
+			content : 'To verify, enter the code you just received via SMS'
+		},
+		function(config){
+			if(config.input_value && config.proceed){
+				popup.alert({
+						content: 'Great - your number is verified'
+				});
+			} else if(!config.proceed){
+				popup.alert({
+						content: 'You clicked cancel.'
+				});
+			}
+		}
+	);
+});</script>
+</body>
+</html>
+
+
