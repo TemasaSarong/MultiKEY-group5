@@ -8,7 +8,7 @@
 	align-items: center;
 	position: relative;
 	height: 100px;
-	width: 100px;
+	width: 115px;
 }
 
 .radial {
@@ -16,8 +16,7 @@
 	height: 10px;
 	width: 30px;
 	border-radius: 5px;
-	background-color: #67CFAC;
-	left: 120px;
+	left: 100%;
 	transform: rotate(0deg);
 	transform-origin: 65px;
 	transition:background 1s, box-shadow 1s;
