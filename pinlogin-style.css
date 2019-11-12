@@ -13,9 +13,8 @@ html {
 	height: 100%;
 }
 
-
-.wrapper1 {
-    text-align: center;
+a{
+  	text-decoration: none;
 }
 
 header{
@@ -25,6 +24,7 @@ header{
   	background: #67CFAC;
   	justify-content: center; 
   	align-item: center;
+    text-align: center;
   	top: 0px;
 	left: 0px;
   	margin-bottom: 40px;
@@ -36,7 +36,9 @@ img{
 	justify-item: center;
 }
 
-.wrapper2 {
+.wrapper {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -44,12 +46,12 @@ img{
 	text-align: left;
 }
 
-p {
+p1 {
 	color: #67CFAC;
 	font-size: 25px;
 	position: center;
 	font-weight: bold;
-	margin-top: 25%;
+	margin-top: 10%;
 }
  
 
@@ -57,40 +59,39 @@ p2{
     color: #707070;
 	font-size: 18px;
 	text-decoration: none;
-	margin-top: 5%;
+	margin-top: 15px;
 }
 
 
-p3{
-  	font-size: 16px;
-  	width: 100%;
-  	min-hieght: 500px;
-  	color: #707070;
-  	text-align: right;
-  	margin-left: 260px;
-  	margin-top: 0px;
-  	margin-bottom: 40px;
-  	text-decoration: none;
-}
-
-
-a{
-  	text-decoration: none;
-}
 
 .pin{
 	display: inline-flex;
  	justify-content: center; 
   	align-item: center;
-	
-  	margin-top: 0px;
-  	margin-bottom: 40px;
+	margin-top: 10%;
+  	margin-bottom: 10px;
 }
 
-.pinBox {
-	width: 5px;
+input[type=password] {
+	width: 80px;
+	padding: 2px;
+  	display: inline-block;
+	border: 1px medium #67CFAC;
+	font-size: 20px;
+	line-height: 0.5;
+	text-align: center;
+	letter-spacing: 0.5em;
+	color: #707070;
 }
 
+p3{
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+  	text-align: center;
+  	text-decoration: none;
+	margin-top: 0%;
+}
 
 
 
