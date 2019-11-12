@@ -39,21 +39,21 @@ a{
 }
 
 img{
-	padding: 60px 40px;
+	padding-top: 20%;
 	position: center;
 	justify-item: center;
 }
 
 header{
-  display: flex;
-  flex-direction: colum;
-  font-size: 40px;
-  width: 100%;
-  min-hieght: 500px;
-  color: #FFFFFF;
-  justify-content: center; 
-  align-item: center;
-  margin-bottom: 80px;
+  	display: flex;
+  	flex-direction: colum;
+  	font-size: 33px;
+  	width: 100%;
+  	color: #FFFFFF;
+  	justify-content: center; 
+  	align-item: center;
+	margin-top: 20%;
+  	margin-bottom: 20%;
 }
 
 
