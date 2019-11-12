@@ -192,7 +192,8 @@ a:hover {
 	/* Selve sidens indhold med slideshow */
 
 .wrapper {
-    	float: center;	
+    	float: center;
+		margin-bottom: 10px;
 		}
 
 	/* Slideshow container */
@@ -264,7 +265,6 @@ a:hover {
 
 
 .footer {
-   		position: fixed;
    		left: 0;
    		bottom: 0;
    		width: 100%;
