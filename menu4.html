@@ -1,65 +1,147 @@
 <!doctype html>
 <html>
+	
 <head>
-<meta charset="utf-8">
-<title>Menu 4</title>
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="menu4.css">
-	<script src="https://kit.fontawesome.com/266ad4a4ba.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Profile Page With Menu</title>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="menu4.css">
+		<script src="https://kit.fontawesome.com/266ad4a4ba.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
 	
+ <!--
+ 	The menu on the page
+ -->
 	<nav role="navigation">
-  <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" />
-    
-    <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-     <ul id="menu">
-                <div class="mainmenu">
-              <li><i class="fa fa-key fa-2x"></i><a href="#">My Keys</a></li></div>
-                <div class="submenu">
-                  <li><a href="#remove">Remove & Lock Keys</a></li>
-                  <li><a href="#share">Share Keys</a></li>
-                  <li><a href="#how">How <span1 style="color:#ffffff">Multi</span1><span2 style="color:#ED6B86">KEY</span2> Works</a></li>
-                </div>
-              
-              <div class="mainmenu">
-				  <li><i class="fa fa-headset fa-2x"></i><a href="#">Contact</a></li></div>
-                <div class="submenu">
-                  <li><a href="#remove">Help</a></li>
-                  <li><a href="#share">About NHS</a></li>
-                </div>
-              
-              <div class="mainmenu">
-                <li><i class="fas fa-user-circle fa-2x"></i><a href="#">My Account</a></li>
-                <li><i class="fas fa-sign-out-alt fa-2x"></i><a href="#">Log Out</a></li></div>
-            </ul>
-  </div>
-	<h2>Nille Frandsen</h2>	
-	<div class="dots">
-		<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+  		<div id="menuToggle">
+			<!--
+			A fake / hidden checkbox is used as click reciever,
+			so you can use the :checked selector on it.
+			-->
+		<input type="checkbox" />
+
+				<!--
+				Spans control the lines of the hamburger menu and turns it into an X, when the checkbox is checked.
+				-->
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<ul id="menu">
+					<div class="mainmenu">
+					  		<li><i class="fa fa-key fa-2x"></i><a href="#">My Keys</a></li></div>
+						<div class="submenu">
+						  <li><a href="#remove">Remove & Lock Keys</a></li>
+						  <li><a href="#share">Share Keys</a></li>
+						  <li><a href="#how">How <span1 style="color:#ffffff">Multi</span1><span2 style="color:#ED6B86">KEY</span2> Works</a></li>
+							</div>
+
+					<div class="mainmenu">
+						  <li><i class="fa fa-headset fa-2x"></i><a href="#">Contact</a></li></div>
+						<div class="submenu">
+						  <li><a href="#remove">Help</a></li>
+						  <li><a href="#share">About NHS</a></li>
+							</div>
+
+					 <div class="mainmenu">
+							<li><i class="fas fa-user-circle fa-2x"></i><a href="#">My Account</a></li>
+						  
+							<li><i class="fas fa-sign-out-alt fa-2x"></i><a href="#">Log Out</a></li>
+							</div>
+				</ul>
+		</div>
 		
-	</div>	
-</nav>
+<!--
+ 	The profile name
+-->
+  			<h2>Nille Frandsen</h2>	
+		
+			<div class="settings">
+				<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+			</div>	
+	</nav>
+	
+	
+ <!--
+ 	The content of the page
+ -->
+	<div class="wrapper">
+	
+		<div class="slideshow-container">
+
+			<div class="Slides fade">
+			  <img src="billeder/profil1.png" style="width:100%" alt="Nøgleliste">
+			</div>
+
+
+			<div class="Slides fade">
+			  <img src="billeder/profil2.png" style="width:100%" alt="Aktivnøgleliste">
+			</div>
+
+		</div>
+		
+	<!--
+		The next/prev buttons to shift the slideshow
+	 -->
+		<a class="prev" style="font-size: 50px" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" style="font-size: 50px" onclick="plusSlides(1)">&#10095;</a>		
+
+	<!--
+		The dots showing which slides is active 
+	 -->	
+		<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+		</div>
+
+		
+<!--
+	The javascript controlling which slide and dot is shown/active 
+ -->		
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("Slides");
+		  var dots = document.getElementsByClassName("dot");
+
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+		
+		
+	</div>
+
+
+
+	<footer>
+		<img src="billeder/Multikey Logo white.png" alt="Logo for MultiKEY">
+	
+	</footer>
+  
 	
 </body>
 </html>

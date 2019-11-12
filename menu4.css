@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+		height: 100%;
+		}
 
 body {
   		margin: 0;
@@ -9,27 +12,30 @@ body {
   /* make it look decent enough */
   		background: #f3f3f3;
   		font-family: 'Source Sans Pro', sans-serif;
-}
-	
-nav { /* Selve menu linjen */
+		}
+
+
+	/* Selve menu linjen */
+nav { 
 		display: flex;
 		background-color: #67CFAC;
 		height: 60px;		
 		}
 
-.dots { 
-		position:relative;
+
+	/* Settings icon med 3 dots */
+.settings { 
+		position: absolute;
   		top: 15px;
-  		left: 80px;
-		
+  		right: 10px;
 		}
 
-.dots i {
+.settings i {
 		color: #ffffff;
 		font-size: 30px;
 		z-index: 1; 
-		
 		}
+
 
 h2 {
 		text-align: center;
@@ -44,10 +50,11 @@ h2 {
 a {
   		text-decoration: none;
   		color: #ffffff;
-  
   		transition: color 0.3s ease;
 		}
 
+
+	/* Burgermenuen */
 .mainmenu a {
   		text-decoration: none;
 		font-size: 1.6em;
@@ -77,6 +84,7 @@ a:hover {
   		opacity:0.5;
 		}
 
+	/* Checkboxen som aktiverer/gemmer menuen */
 #menuToggle {
   		display: block;
   		position: relative;
@@ -102,9 +110,7 @@ a:hover {
 	 	-webkit-touch-callout: none;
 	 	}
 
-	/*
-	 * Just a quick hamburger
-	 */
+	/* Selve hamburger menuen */
 #menuToggle span {
 	  	display: block;
 	  	width: 33px;
@@ -131,35 +137,25 @@ a:hover {
 	  	transform-origin: 0% 100%;
 		}
 
-	/* 
-	 * Transform all the slices of hamburger
-	 * into a crossmark.
-	 */
+	/* Linjerne i burger menuen ændrer sig til et X */
 #menuToggle input:checked ~ span {
 	  	opacity: 1;
 	  	transform: rotate(45deg) translate(-2px, -1px);
 	  	background: #ffffff;
 		}
 
-	/*
-	 * But let's hide the middle one.
-	*/
+	/* Den mindterste streg skjules */
 #menuToggle input:checked ~ span:nth-last-child(3) {
 	  	opacity: 0;
 	  	transform: rotate(0deg) scale(0.2, 0.2);
 		}
 
-	/*
-	 * Ohyeah and the last one should go the other direction
-	 */
+	/* Den sidste linje kører i modsat retning */
 #menuToggle input:checked ~ span:nth-last-child(2) {
 	  	transform: rotate(-45deg) translate(0, -1px);
 		}
 
-	/*
-	 * Make this absolute positioned
-	 * at the top left of the screen
-	 */
+	/* Make this absolute positioned at the top left of the screen */
 #menu {
 		position: absolute;
 		width: 280px;
@@ -183,10 +179,104 @@ a:hover {
 		margin-left: 30px;
 		}
 
-	/*
-	 * And let's slide it in from the left
-	 */
+	/* Menuen skal glide ind fra venstre side */
 #menuToggle input:checked ~ ul {
 	  	transform: none;
 		}
+
+
+
+	/* Selve sidens indhold med slideshow */
+
+.wrapper {
+    	float: center;	
+		}
+
+	/* Slideshow container */
+.slideshow-container {
+		max-width: 500px;
+		position: relative;
+		margin: auto;
+		padding: 50px;
+		}
+
+/* Next & previous buttons */
+.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		padding: 5px 5px;
+		color: #67CFAC;
+		font-weight: bold;
+		transition: 0.6s ease;
+		user-select: none;
+		}
+
+	/* Position the "next button" to the right */
+.next {
+  		right: 0;
+		}
+
+	/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  		color: #ED6B86;
+		}
+
+	/* The dots/bullets/indicators */
+.dot {
+  		cursor: pointer;
+  		height: 20px;
+  		width: 20px;
+  		margin: 0 2px;
+  		background-color: #67CFAC;
+  		border-radius: 50%;
+  		display: inline-block;
+  		opacity: 0.5;
+  		transition: background-color 0.6s ease;
+		}
+
+.active, .dot:hover {
+  		background-color: #ED6B86;
+  		opacity: 1;
+		}
+
+	/* Fading animation */
+.fade {
+  		-webkit-animation-name: fade;
+  		-webkit-animation-duration: 1.5s;
+  		animation-name: fade;
+  		animation-duration: 1.5s;
+		}
+
+@-webkit-keyframes fade {
+  		from {opacity: .4} 
+  		to {opacity: 1}
+		}
+
+@keyframes fade {
+  		from {opacity: .4} 
+  		to {opacity: 1}
+		}
+
+
+footer {
+   		position: fixed;
+   		left: 0;
+   		bottom: 0;
+   		width: 100%;
+		height: 50px;
+   		background-color: #67CFAC;
+   		color: white;
+   		text-align: center;
+}
+
+	/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  		.prev, .next {font-size: 15px}
+		}
+
+
+
+
 
