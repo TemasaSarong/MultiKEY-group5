@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	background: #67CFAC;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+p {
+	color: #F3F3F3;
+	font-size: 14px;
+	position: center;
+	font-weight: bold;
+	padding: 25px 8px;
+	text-decoration: none;
+	justify-content: center;
+	margin: 0px 96px;
+	text-align: left;
+}
+
+p2{
+    color: #F3F3F3;
+	font-size: 14px;
+	position: center;
+	padding: 25px 8px;
+	text-decoration: none;
+	justify-content: center;
+	margin: 0px 96px;
+	text-align: left;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+	padding: 60px 40px;
+	position: center;
+	justify-item: center;
+}
+
+header{
+  display: flex;
+  flex-direction: colum;
+  font-size: 40px;
+  width: 100%;
+  min-hieght: 500px;
+  color: #FFFFFF;
+  justify-content: center; 
+  align-item: center;
+  margin-bottom: 80px;
+}
+
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+	box-shadow: inset 0px 1px 0px 0px #FFFFFF;
+	background: linear-gradient(to bottom, #FFFFFF 5%, #f6f6f6 100%);
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	cursor: pointer;
+	padding: 12px 24px;
+	position: center;
+    top: 50%;
+}
+
+.button a {
+	color: #707070;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #F3F3F3;
+}
+.button:hover {
+	background: linear-gradient(to bottom, #F3F3F3 5%, #F3F3F3 100%);
+	background-color: #F3F3F3;
+}
+
+@media (max-width: 400px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}

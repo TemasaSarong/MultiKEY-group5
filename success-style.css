@@ -3,7 +3,7 @@
 
 
 body {
-	background: #F3F3F3;
+	background: #67CFAC;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -13,9 +13,8 @@ html {
 
 img{
 	padding: 10px 40px;
-	position: center;
+	top: 200px;
 	justify-item: center;
-	background-color: #67CFAC;
 }
 
 header{
@@ -31,10 +30,6 @@ header{
   margin-bottom: 40px;
 }
 
-.wrapper {
-    float: center;
-	
-}
 
 p{
   display: flex;
