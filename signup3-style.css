@@ -89,7 +89,7 @@ input.invalid {
 /*flexbox omkring checkbox og tekstbox ud for*/
 .checkmark {
 	display:flex;
-	margin-left: 1px;
+	margin-left: 10px;
 }
 
 input[type=checkbox] {
