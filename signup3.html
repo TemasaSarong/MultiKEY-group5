@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<title>Sign-up 3</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../alertify.min.js"></script>
+		<link rel="stylesheet" href="alertify.core.css" />
+<link rel="stylesheet" href="alertify.custom.css" id="toggleCSS" />
 		<link rel="stylesheet" href="signup3-style.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/266ad4a4ba.js" crossorigin="anonymous"></script>
@@ -32,7 +35,31 @@
 		<div class="innercontainer">
 	  
 			<label for="mobile"><b>MOBILE</b></label>
-			<input type="text" placeholder="Your mobile number here" name="mobile" oninput="this.className = ''" >
+			<input type="text" placeholder="Your mobile number here" id="myInput" name="mobile" oninput="promptalert()">
+
+<script type="text/javascript">
+ 
+function promptalert(){
+ 
+var promval = prompt('To verify, enter the code you just received via SMS', "Code");
+ 
+ 
+ 
+if (promval != null) {
+ 
+alert("Great - your number is verified");
+ 
+}
+ 
+else {
+ 
+alert ("You did not choose to proceed!");
+ 
+}
+ 
+}
+ 
+</script>
 
 			<label for="email"><b>EMAIL</b></label>
 			<input type="text" placeholder="Your email address here" name="email" oninput="this.className = ''" >
