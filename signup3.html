@@ -6,13 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="../alertify.min.js"></script>
 		<link rel="stylesheet" href="alertify.core.css" />
-<link rel="stylesheet" href="alertify.custom.css" id="toggleCSS" />
+		<link rel="stylesheet" href="alertify.custom.css" id="toggleCSS" />
 		<link rel="stylesheet" href="signup3-style.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/266ad4a4ba.js" crossorigin="anonymous"></script>
 	</head>	
 
 <body>
+	
 <!-- Circles which indicates the steps of the form: -->
 	  <div class="steps">
 		<span class="step"><p>1</p></span>
@@ -21,9 +22,7 @@
 	  </div>
 	<form id="regForm" action="signup-success.html"> 
 	 	
-	
-	
-			
+				
   	<!-- One "tab" for each step in the form: -->
   	<div class="tab"> 
 	  
@@ -151,7 +150,7 @@ function showTab(n) { //styrer at det element som skal vises hedder tab
     document.getElementById("nextBtn").innerHTML = "I'm done";
 	  
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "Next Step";
   }
   //styrer hvilken step circel er aktiv
   fixStepIndicator(n)
