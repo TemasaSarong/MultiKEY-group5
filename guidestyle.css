@@ -506,6 +506,10 @@ section:nth-of-type(6) h2::before {
   background: #FFFFFF;
 }
 
+.cd-colors li:nth-of-type(7) .cd-color-swatch {
+  background: #B3E7D6;
+}
+
   .cd-colors li {
     width: 16%;
     float: left;
