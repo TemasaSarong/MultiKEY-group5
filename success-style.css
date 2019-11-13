@@ -27,8 +27,7 @@ header{
 }
 
 img{
-	padding: 10px 40px;
-	top: 40%;
+	width: 300px;
 	justify-item: center;
 }
 
@@ -46,12 +45,12 @@ p5{
 	
 }
 
-p3{
+p3 a {
 	font-size: 18px;
 	font-weight: 600;
-	text-transform: uppercase;
+	color: #ffffff;
   	text-align: center;
   	text-decoration: none;
-	margin-top: 0%;
+	z-index: 1;
 }
 
