@@ -121,7 +121,8 @@ header {
 
 main > h1 {
   color: #19191a;
-}
+  }
+
 h1, h2 {
 font-family: 'Source Sans Pro', sans-serif;
     color: #303030;
@@ -132,6 +133,7 @@ h1 {
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 .4em;
+  padding-top: 80px;
 }
 
 
@@ -325,7 +327,7 @@ header nav {
   .cd-main-nav li:first-of-type a {
     border-top: none;
   }
-}
+
   .cd-main-nav {
     display: none;
   }
@@ -349,11 +351,9 @@ main > h1 {
   margin: 3em 0;
 }
 
-    padding-top: 80px;
-  }
 
   main > h1 {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 50%;
     height: 80px;
@@ -362,8 +362,8 @@ main > h1 {
     margin: 0 0 0 -200px;
     font-size: 2.6rem;
     z-index: 20;
+	padding-top: 80px;
   }
-}
 
 section {
   margin: 3em 0;
@@ -497,18 +497,19 @@ section:nth-of-type(6) h2::before {
   background: #67CFAC;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
+  background: #B3E7D6;
+	
+}.cd-colors li:nth-of-type(5) .cd-color-swatch {
   background: #707070;
 }
-.cd-colors li:nth-of-type(5) .cd-color-swatch {
+.cd-colors li:nth-of-type(6) .cd-color-swatch {
   background: #F3F3F3;
 }
-.cd-colors li:nth-of-type(6) .cd-color-swatch {
+.cd-colors li:nth-of-type(7) .cd-color-swatch {
   background: #FFFFFF;
 }
 
-.cd-colors li:nth-of-type(7) .cd-color-swatch {
-  background: #B3E7D6;
-}
+
 
   .cd-colors li {
     width: 16%;
