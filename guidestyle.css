@@ -116,6 +116,7 @@ header {
 
 main > h1 {
   color: #19191a;
+
 }
 h1, h2 {
 font-family: 'Source Sans Pro', sans-serif;
@@ -302,10 +303,7 @@ header nav {
   .cd-main-nav li:first-of-type a {
     border-top: none;
   }
-  .cd-main-nav {
-    display: none;
-  }
-
+  
   .cd-download {
     display: block;
   }
@@ -325,11 +323,13 @@ main > h1 {
   margin: 3em 0;
 }
 
+  main {
     padding-top: 80px;
   }
 
+
   main > h1 {
-    position: fixed;
+      text-align: center;
     top: 0;
     left: 50%;
     height: 80px;
@@ -339,6 +339,7 @@ main > h1 {
     font-size: 2.6rem;
     z-index: 20;
   }
+
 
 section {
   margin: 3em 0;
@@ -365,6 +366,9 @@ section:nth-of-type(5) h2::before {
 }
 section:nth-of-type(6) h2::before {
   content: '6. ';
+}
+section:nth-of-type(7) h2::before {
+  content: '7. ';
 }
   section {
     margin: 3em 0 5em;
