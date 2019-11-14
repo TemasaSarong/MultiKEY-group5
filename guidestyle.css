@@ -116,8 +116,8 @@ header {
 
 main > h1 {
   color: #19191a;
-
 }
+
 h1, h2 {
 font-family: 'Source Sans Pro', sans-serif;
     color: #303030;
@@ -212,16 +212,15 @@ header {
 header nav {
   display: inline-block;
 }
-@media only screen and (min-width: 1024px) {
   header {
     height: 80px;
   }
+    
   header:after {
     content: "";
     display: table;
     clear: both;
   }
-}
 
 .cd-logo {
   display: inline-block;
