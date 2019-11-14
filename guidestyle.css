@@ -78,7 +78,6 @@ header {
   width: 180px;
 }
 
-
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
   background: #19191a;
@@ -98,20 +97,6 @@ header {
 .cd-nav-trigger span::before, .cd-nav-trigger span::after {
   /* upper and lower lines */
   background-color: #ffffff;
-}
-
-.nav-is-visible .cd-nav-trigger span {
-  /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(255, 255, 255, 0);
-}
-.nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
-  /* preserve visibility of upper and lower lines - close icon */
-  background-color: white;
-
-}
-
-.cd-download span::before {
-  /* right arrow color */
 }
 
 main > h1 {
