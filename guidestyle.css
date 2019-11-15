@@ -357,7 +357,7 @@ section:nth-of-type(7) h2::before {
   section {
     margin: 3em 0 5em;
   }
-}
+
   section {
     width: 48%;
     float: left;
@@ -508,12 +508,17 @@ section:nth-of-type(7) h2::before {
 	border: 1px solid #dcdcdc;
 	display: inline-block;
 	cursor: pointer;
-	position: center;
     top: 50%;
         font-weight: bold;
         font-family: 'Source Sans Pro', sans-serif;
     padding: 10px;
 	margin: 15px;
+}
+
+.button a {
+	font-size: 1.4rem;
+  	line-height: 1.4;
+  	color: #707070;
 }
 
 .action-button {
@@ -589,8 +594,9 @@ section:nth-of-type(7) h2::before {
 	font-size: 13px;
 	font-style: italic;
      margin: 5px;
-}
-    .checkmark{
+} 
+
+.checkmark {
         color:#67CFAC;
     }
     
