@@ -19,11 +19,9 @@ a{
 
 header{
   	display: flex;
-  	flex-direction: colum;
   	width: 100%;
   	background: #67CFAC;
   	justify-content: center; 
-  	align-item: center;
     text-align: center;
   	top: 0px;
 	left: 0px;
@@ -32,7 +30,6 @@ header{
 
 img{
 	padding-top: 5%;
-	position: center;
 	justify-item: center;
 	width: 60%;
 }
@@ -50,7 +47,6 @@ img{
 .text1 {
 	color: #67CFAC;
 	font-size: 25px;
-	position: center;
 	font-weight: bold;
 	margin-top: 10%;
 }
@@ -68,7 +64,6 @@ img{
 .pin{
 	display: inline-flex;
  	justify-content: center; 
-  	align-item: center;
 	margin-top: 10%;
   	margin-bottom: 10px;
 }
