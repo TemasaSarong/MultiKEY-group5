@@ -219,6 +219,6 @@ button :hover {
 	z-index: 1;
 }
 
-@media screen {
-	
-}
+@media only screen and (max-width: 600px) {
+  		.prev, .next {font-size: 15px}
+		}

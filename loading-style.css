@@ -27,3 +27,9 @@
 	box-shadow: 0 0 25px 2px #f3f3f3;
 }
 
+@media only screen and (max-width: 600px){
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+		}
+}

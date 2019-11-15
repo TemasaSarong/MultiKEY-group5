@@ -72,9 +72,10 @@ header{
 	background-color: #F3F3F3;
 }
 
-@media (max-width: 400px) {
+
+@media only screen and (max-width: 600px){
   .row {
     -webkit-flex-direction: column;
     flex-direction: column;
-  }
+		}
 }

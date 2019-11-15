@@ -89,6 +89,12 @@ input[type=password] {
 	margin-top: 0%;
 }
 
+@media only screen and (max-width: 600px){
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+		}
+}
 
 
 
