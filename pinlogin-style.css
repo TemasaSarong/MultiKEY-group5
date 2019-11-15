@@ -34,6 +34,7 @@ img{
 	padding-top: 5%;
 	position: center;
 	justify-item: center;
+	width: 60%;
 }
 
 .wrapper {
@@ -46,7 +47,7 @@ img{
 	text-align: left;
 }
 
-p1 {
+.text1 {
 	color: #67CFAC;
 	font-size: 25px;
 	position: center;
@@ -55,7 +56,7 @@ p1 {
 }
  
 
-p2{
+.text2 {
     color: #707070;
 	font-size: 18px;
 	text-decoration: none;
@@ -84,7 +85,7 @@ input[type=password] {
 	color: #707070;
 }
 
-p3{
+.text3 {
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;

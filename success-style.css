@@ -17,18 +17,17 @@ html {
 
 header{
   	display: flex;
-  	flex-direction: colum;
   	width: 100%;
 	margin-top: 25%;
   	color: #67CFAC;
   	justify-content: center; 
-  	align-item: center;
   	margin-bottom: 0px;
 }
 
 img{
 	width: 300px;
 	justify-item: center;
+	text-align: center;
 }
 
 .wrapper {
@@ -37,7 +36,7 @@ img{
 	margin-top: 30%;
 }
 
-p5{
+.text5 {
   	font-size: 25px;
 	font-weight: 600;
   	color: #ffffff;
