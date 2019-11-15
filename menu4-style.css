@@ -114,7 +114,7 @@ a:hover {
 	 	}
 
 	/* Selve hamburger menuen */
-#menuToggle span {
+#menuToggle span.menu {
 	  	display: block;
 	  	width: 33px;
 	  	height: 4px;
@@ -132,16 +132,16 @@ a:hover {
 		opacity 0.55s ease;
 		}
 
-#menuToggle span:first-child {
+#menuToggle span.menu:first-child {
 	  	transform-origin: 0% 0%;
 		}
 
-#menuToggle span:nth-last-child(2) {
+#menuToggle span.menu:nth-last-child(2) {
 	  	transform-origin: 0% 100%;
 		}
 
 	/* Linjerne i burger menuen ændrer sig til et X */
-#menuToggle input:checked ~ span {
+#menuToggle input:checked ~ span.menu {
 	  	opacity: 1;
 	  	transform: rotate(45deg) translate(-2px, -1px);
 	  	background: #ffffff;
@@ -187,12 +187,17 @@ a:hover {
 	  	transform: none;
 		}
 
+.multi {
+		color:#ffffff;
+}
 
+.key {
+		color:#ED6B86;
+}
 
 	/* Selve sidens indhold med slideshow */
 
 .wrapper {
-    	float: center;
 		margin-bottom: 10px;
 		}
 
