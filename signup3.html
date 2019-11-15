@@ -16,9 +16,9 @@
 	
 <!-- Circles which indicates the steps of the form: -->
 	  <div class="steps">
-		<span class="step"><p>1</p></span>
-		<span class="step"><p>2</p></span>
-		<span class="step"><p>3</p></span>
+		<span class="step">1</span>
+		<span class="step">2</span>
+		<span class="step">3</span>
 	  </div>
 	<form id="regForm" action="signup-success.html"> 
 	 	
@@ -33,10 +33,10 @@
 		
 		<div class="innercontainer">
 	  
-			<label for="mobile"><b>MOBILE</b></label>
+			<label><b>MOBILE</b></label>
 			<input type="text" placeholder="Your mobile number here" id="myInput" name="mobile" oninput="promptalert()">
 
-					<script type="text/javascript">
+					<script>
 
 					function promptalert(){
 
@@ -60,21 +60,21 @@
 
 					</script>
 
-			<label for="email"><b>EMAIL</b></label>
+			<label><b>EMAIL</b></label>
 			<input type="text" placeholder="Your email address here" name="email" oninput="this.className = ''" >
 
-			<label for="pin"><b>PINCODE</b></label>
+			<label><b>PINCODE</b></label>
 			<input type="password" placeholder="Write your new 4-digit pincode here" name="pin" oninput="this.className = ''" >
 
-			<label for="cpin"><b>CONFIRM PINCODE</b></label>
+			<label><b>CONFIRM PINCODE</b></label>
 			<input type="password" placeholder="Confirm your pincode" name="pin-repeat" oninput="this.className = ''" >
 
-			<label>
+			
 			<div class="checkmark"><input type="checkbox" name="fingerprint">
-			<p3> Mark here if you want to use fingerprint scanner or face recognition to login. </p3></div> 
-			</label>
+			<div class="text3"> Mark here if you want to use fingerprint scanner or face recognition to login. </div></div> 
+			
 
-			<p4>By creating an account you agree to our <a href="#" style="color:#67CFAC">Terms of Service and Privacy Policy</a>.</p4>
+			<div class="text4">By creating an account you agree to our <a href="#" style="color:#67CFAC">Terms of Service and Privacy Policy</a>.</div>
 
 			<div class="clearfix"></div>
 		</div>
@@ -88,16 +88,16 @@
 	  	<h2 class="title">Profile Information</h2>
         <h3 class="subtitle">This is where you fill out your profile information. You can also add a profile picture later to personalise your account.</h3>
 	  
-	  	<label for="name"><b>Name</b></label>
+	  	<label><b>Name</b></label>
 		<input type="text" placeholder="Your full name here" name="name" oninput="this.className = ''" >
 	  
-	  	<label for="address"><b>address</b></label>
+	  	<label><b>address</b></label>
 		<input type="text" placeholder="Your streetname, number and floor here" name="address" oninput="this.className = ''" >
 	  
-	  	<label for="city"><b>city</b></label>
+	  	<label><b>city</b></label>
 		<input type="text" placeholder="Your zipcode and city here" name="city" oninput="this.className = ''" >
 	  
-	  	<label for="country"><b>COUNTRY</b></label>
+	  	<label><b>COUNTRY</b></label>
 		<input type="text" placeholder="Write your country here" name="country" oninput="this.className = ''" >
   	</div>
 	
