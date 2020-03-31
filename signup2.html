@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>signup2</title>
+	
+<link rel="stylesheet" href="signup2-style.css">
+<script src="signup2-js.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+</head>
+
+<body>
+	<!-- multistep form -->
+<form id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Login</li>
+    <li>Profile</li>
+    <li>Create Key</li>
+  </ul>
+  <!-- fieldsets -->
+  <fieldset>
+    <h2 class="fs-title">Create your account</h2>
+    <h3 class="fs-subtitle">Let's make you an account - just fill out the information below and we'll have you up and running in only 3 steps. </h3>
+    <input type="text" name="mobile" placeholder="Mobile" />
+     <input type="text" name="email" placeholder="Email" />
+    <input type="pincode" name="pin" placeholder="Pincode" />
+    <input type="pincode" name="cpin" placeholder="Confirm Pincode" />
+    <input type="button" name="next" class="next action-button" value="Swipe To Next Step" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Profile Information</h2>
+    <h3 class="fs-subtitle">This is where you fill out your profile information. You can also add a profile picture later to personalise your account.</h3>
+    <input type="text" name="name" placeholder="Your full name here" />
+    <input type="text" name="address" placeholder="Your streetname, number and floor here" />
+    <input type="text" name="city" placeholder="Your zipcode and city here" />
+    <input type="text" name="country" placeholder="Choose your country here" />
+    <h3 class="fs-subtitle">Nearly done - now let's add your first key</h3>
+    <input type="button" name="next" class="next action-button" value="Swipe To Next Step" />
+  </fieldset>
+  
+  <fieldset>
+    <h2 class="fs-title">Add Keys</h2>
+    <h3 class="fs-subtitle">Now it's time to add your first key.</h3>
+    <div class="key"></div>
+   <h3 class="fs-subtitle">Take your key and hold it to the [+] for 3 seconds.</h3>
+   
+   
+  </fieldset>
+</form>
+</body>
+</html>
